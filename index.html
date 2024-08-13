@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://c8.alamy.com/comp/2BWNH1E/vector-realistic-calculator-icon-isolated-on-transparent-background-design-template-in-eps10-2BWNH1E.jpg" type="image/x-icon">
+</head>
+<body>
+    <div style="margin-top: 120px;" class="container">
+        <div class="calculator mx-auto mt-5">
+            <div class="calculator-screen bg-dark text-right p-3 mb-4">
+                <input type="text" id="output" class="form-control p-4 text-right text-danger" disabled>
+            </div>
+            <div style="position: relative;" class="calculator-keys">
+                <button onclick="number(7)" type="button" class="btn btn-dark">7</button>
+                <button onclick="number(8)" type="button" class="btn btn-dark">8</button>
+                <button onclick="number(9)" type="button" class="btn btn-dark">9</button>
+                <button onclick="number('-')" type="button" class="btn btn-warning">-</button>
+
+                <button onclick="number(4)" type="button" class="btn btn-dark">4</button>
+                <button onclick="number(5)" type="button" class="btn btn-dark">5</button>
+                <button onclick="number(6)" type="button" class="btn btn-dark">6</button>
+                <button onclick="number('/')" type="button" class="btn btn-warning">/</button>
+
+                <button onclick="number(1)" type="button" class="btn btn-dark">1</button>
+                <button onclick="number(2)" type="button" class="btn btn-dark">2</button>
+                <button onclick="number(3)" type="button" class="btn btn-dark">3</button>
+                <button onclick="number('*')" type="button" class="btn btn-warning">*</button>
+
+                <button onclick="number(0)" type="button" class="btn btn-dark">0</button>
+                <button onclick="number('00')" type="button" class="btn btn-dark">00</button>
+                <button onclick="number('.')" type="button" class="btn btn-dark">.</button>
+                <button onclick="number('+')" type="button" class="btn btn-warning">+</button>
+                <button onclick="Clear()" class="btn btn-danger">C</button>
+                <button onclick="removelastItem()" type="button" class="btn btn-warning"><i class="fa-solid fa-delete-left"></i></button>
+                <button style="position: absolute; top: 83%; width: 50%; left: 50%;" onclick="equals()" type="button" class="btn btn-success btn-lg btn-block">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
